@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
     dependent: :destroy
 
   has_many :contact_shares,
-  dependent: :destroy
+    dependent: :destroy
 
   has_many :shared_contacts,
     through: :contact_shares,

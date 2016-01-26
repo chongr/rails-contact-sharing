@@ -5,7 +5,7 @@ url = Addressable::URI.new(
   scheme: 'http',
   host: 'localhost',
   port: 3000,
-  path: '/users/3'
+  path: '/users/1'
 ).to_s
 #
 # query_url = Addressable::URI.new(
@@ -37,4 +37,4 @@ def create_user
   )
 end
 
-puts RestClient.delete(url)
+puts RestClient.get(url)
